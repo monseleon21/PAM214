@@ -68,7 +68,7 @@ export default function MenuScreen()
                         <Text style={styles2.textodescripcion}>DESARROLLO DE APLICACIONES</Text>
                         <Text style={styles2.textodescripcion2}>Guerra Lopez Ivan Isay</Text>
                         <Text style={styles2.textodescripcion}>TIID - 214</Text>
-                        <Text style={styles2.textodescripcion2}>Urbsno Zuñiga Yael Alejandro</Text>
+                        <Text style={styles2.textodescripcion2}>monse leon</Text>
                     </SafeAreaView>
                 ) 
                 
