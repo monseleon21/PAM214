@@ -28,7 +28,7 @@ export default function TextInputScreen()
             <Text style = {styles.label}>INGRESA TU NOMBRE: </Text>
             <TextInput 
                 style = {styles.input}
-                placeholder = "Ejemplo: Yael Zuñiga"
+                placeholder = "Ejemplo: monse leon"
                 value = {nombre}
                 onChangeText = {setNombre}
                 keyboardType = "default"
