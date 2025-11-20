@@ -1,30 +1,37 @@
-import { View, Text, StyleSheet } from 'react-native';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import {View, Text, StyleSheet} from 'react-native';
+import Ionicons from '@expo/vector-icons/Ionicons';
 
-export default function Home() {
+export default function Home()
+{
     return (
-        <View style={styles.container}>
-            <View style={styles.iconRow}>
-                <Ionicons name="home-outline" size={28} color="red" />
-                <Text style={styles.title}>Bienvenido a la pantalla principal</Text>
+        <View style = {styles.container}>
+            <View style = {styles.iconRow}>
+                <Ionicons name = "home-outline" size = {28} color = "red"/>
+                <Text style = {styles.title}>PANTALLA PRINCIPAL</Text>
             </View>
         </View>
     );
 }
 
-const styles = StyleSheet.create({
-    container: {
+const styles = StyleSheet.create(
+{  
+    container:
+    {
         flex: 1,
         backgroundColor: '#fff',
         justifyContent: 'center',
         alignItems: 'center',
         padding: 20,
     },
-    iconRow: {
+
+    iconRow:
+    {
         flexDirection: 'column',
         alignItems: 'center',
     },
-    title: {
+
+    title:
+    {
         fontSize: 18,
         fontWeight: 'bold',
         marginLeft: 10,
