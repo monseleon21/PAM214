@@ -1,28 +1,34 @@
 import { View, Text, Pressable, StyleSheet } from 'react-native';
 
 export default function Settings({ navigation }) {
-    return (
-        <View style={styles.container}>
-            <Text style={styles.title}>configuración</Text>
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Pantalla de Configuración</Text>
 
-            <Pressable style={[styles.button, styles.buttonProfile]} onPress={() => navigation.navigate('Profile')}>
-                <Text style={styles.buttonText}>Ir al perfil</Text>
-            </Pressable>
+      <Pressable 
+        style={[styles.button, styles.buttonProfile]} 
+        onPress={() => navigation.navigate('Profile')}
+      >
+        <Text style={styles.buttonText}>Ir a Perfil</Text>
+      </Pressable>
 
-            <Pressable style={[styles.button, styles.buttonHome]} onPress={() => navigation.navigate('Home')}>
-                <Text style={styles.buttonText}>Volver a Home</Text>
-            </Pressable>
-        </View>
-    );
+      <Pressable 
+        style={[styles.button, styles.buttonHome]} 
+        onPress={() => navigation.navigate('Home')}
+      >
+        <Text style={styles.buttonText}>Volver a Home</Text>
+      </Pressable>
+    </View>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
+  container: {
         flex: 1,
         backgroundColor: '#fff',
-        justifyContent: 'center',
         alignItems: 'center',
-        padding: 20,
+        justifyContent: 'center',
+        padding: 20
     },
     title: {
         fontSize: 22,
@@ -33,16 +39,16 @@ const styles = StyleSheet.create({
     button: {
         paddingVertical: 12,
         paddingHorizontal: 30,
-        borderRadius: 8,
         marginBottom: 20,
+        borderRadius: 8,
         width: '80%',
         alignItems: 'center',
     },
     buttonProfile: {
-        backgroundColor: '#007BFF',
+        backgroundColor: 'rgba(2, 2, 85, 1)',
     },
     buttonHome: {
-        backgroundColor: '#28A745',
+        backgroundColor: 'rgba(20, 134, 105, 1)',
     },
     buttonText: {
         color: '#fff',

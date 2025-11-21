@@ -7,7 +7,7 @@ export default function Home()
         <View style = {styles.container}>
             <View style = {styles.iconRow}>
                 <Ionicons name = "home-outline" size = {28} color = "red"/>
-                <Text style = {styles.title}>PANTALLA PRINCIPAL</Text>
+                <Text style = {styles.title}>Pantalla principal</Text>
             </View>
         </View>
     );
